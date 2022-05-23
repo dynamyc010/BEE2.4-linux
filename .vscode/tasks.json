@@ -1,0 +1,65 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build compiler",
+            "type": "shell",
+            "command": "python3 -m PyInstaller --distpath ../dist/64bit/ --workpath ../build_tmp compiler.spec -y",
+            "options": {
+                "cwd": "./src/"
+            }
+        },
+        {
+            "label": "build BEE2",
+            "type": "shell",
+            "command": "python3 -m PyInstaller --distpath ../dist/64bit/ --workpath ../build_tmp BEE2.spec -y",
+            "options": {
+                "cwd": "./src/"
+            }
+        },
+        {
+            "label": "prepare repo",
+            "type": "shell",
+            "command":  "git clone https://github.com/TeamSpen210/HammerAddons.git",
+            "options": {
+                "cwd": "../"
+            }
+        },
+        {
+            "label": "copy packages",
+            "type": "shell",
+            "command": "cp -r ./packages ./BEE2/packages",
+            "options":{
+                "cwd": "./dist/64bit/",
+            }
+        },
+        {
+            "label": "build both",
+            "options": {
+                "cwd": "./src/"
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "build compiler",
+                "build BEE2",
+                "copy packages"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "launch BEE2",
+            "type": "shell",
+            "command": "./BEE2",
+            "options":{
+                "cwd": "./dist/64bit/BEE2",
+            }
+
+        }
+    ]
+}

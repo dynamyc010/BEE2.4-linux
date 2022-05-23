@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: https://github.com/BEEmod/BEE2.4/issues\n"
-"POT-Creation-Date: 2021-11-14 15:29+1000\n"
+"POT-Creation-Date: 2022-05-22 11:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.10.1\n"
 
 #: loadScreen.py
 msgid "Skipped!"
@@ -749,7 +749,7 @@ msgstr ""
 msgid "Load Backup"
 msgstr ""
 
-#: app/backup.py app/backup.py
+#: app/backup.py
 msgid "Backup zip"
 msgstr ""
 
@@ -757,7 +757,7 @@ msgstr ""
 msgid "Unsaved Backup"
 msgstr ""
 
-#: app/backup.py app/backup.py
+#: app/backup.py
 msgid "Save Backup As"
 msgstr ""
 
@@ -791,15 +791,15 @@ msgstr ""
 msgid "BEEMOD {} - Backup / Restore Puzzles"
 msgstr ""
 
-#: app/backup.py app/backup.py
+#: app/backup.py
 msgid "New Backup"
 msgstr ""
 
-#: app/backup.py app/backup.py
+#: app/backup.py
 msgid "Open Backup"
 msgstr ""
 
-#: app/backup.py app/backup.py
+#: app/backup.py
 msgid "Save Backup"
 msgstr ""
 
@@ -966,7 +966,7 @@ msgstr ""
 msgid "Change the default settings for this item when placed."
 msgstr ""
 
-#: app/gameMan.py app/gameMan.py
+#: app/gameMan.py
 msgid "BEE2 - Export Failed!"
 msgstr ""
 
@@ -994,7 +994,6 @@ msgstr ""
 msgid "Select the folder where the game executable is located ({appname})..."
 msgstr ""
 
-#: app/gameMan.py app/gameMan.py app/gameMan.py app/gameMan.py app/gameMan.py
 #: app/gameMan.py
 msgid "BEE2 - Add Game"
 msgstr ""
@@ -1166,7 +1165,7 @@ msgstr ""
 msgid "Excursion Funnel Music"
 msgstr ""
 
-#: app/music_conf.py app/music_conf.py
+#: app/music_conf.py
 msgid "Synced Funnel Music"
 msgstr ""
 
@@ -1324,7 +1323,7 @@ msgstr ""
 msgid "After exporting, launch the selected game automatically."
 msgstr ""
 
-#: app/optionWindow.py app/optionWindow.py
+#: app/optionWindow.py
 msgid "Play Sounds"
 msgstr ""
 
@@ -1503,7 +1502,7 @@ msgstr ""
 msgid "Clear Palette"
 msgstr ""
 
-#: app/paletteUI.py app/paletteUI.py
+#: app/paletteUI.py
 msgid "Delete Palette"
 msgstr ""
 
@@ -1531,11 +1530,11 @@ msgstr ""
 msgid "Delete Palette \"{}\""
 msgstr ""
 
-#: app/paletteUI.py app/paletteUI.py
+#: app/paletteUI.py
 msgid "BEE2 - Save Palette"
 msgstr ""
 
-#: app/paletteUI.py app/paletteUI.py
+#: app/paletteUI.py
 msgid "Enter a name:"
 msgstr ""
 
@@ -1588,11 +1587,11 @@ msgstr[1] ""
 msgid "Color: R={r}, G={g}, B={b}"
 msgstr ""
 
-#: app/selector_win.py app/selector_win.py
+#: app/selector_win.py
 msgid "Suggested"
 msgstr ""
 
-#: app/signage_ui.py app/signage_ui.py
+#: app/signage_ui.py
 msgid "Configure Signage"
 msgstr ""
 

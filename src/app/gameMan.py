@@ -68,8 +68,8 @@ FILES_TO_BACKUP = [
     ('Windows VRAD', 'bin/vrad',       '.exe'),
     ('OSX VBSP',     'bin/vbsp_osx',   ''),
     ('OSX VRAD',     'bin/vrad_osx',   ''),
-    ('Linux VBSP',   'bin/vbsp_linux', ''),
-    ('Linux VRAD',   'bin/vrad_linux', ''),
+    ('Linux VBSP',   'bin/linux32/vbsp_linux', ''),
+    ('Linux VRAD',   'bin/linux32/vrad_linux', ''),
 ]
 
 _UNLOCK_ITEMS = [
@@ -844,10 +844,19 @@ class Game:
             export_screen.step('EXP', 'editoritems_db')
 
             LOGGER.info('Writing VBSP Config!')
-            os.makedirs(self.abs_path('bin/bee2/'), exist_ok=True)
-            with open(self.abs_path('bin/bee2/vbsp_config.cfg'), 'w', encoding='utf8') as vbsp_file:
-                for line in vbsp_config.export():
-                    vbsp_file.write(line)
+            from sys import platform
+            if platform == 'linux':
+                os.makedirs(self.abs_path('bin/bee2/'), exist_ok=True)
+                self.config_symlink()
+                with open(self.abs_path('bin/bee2/vbsp_config.cfg'), 'w', encoding='utf8') as vbsp_file:
+                    for line in vbsp_config.export():
+                        vbsp_file.write(line)
+            else:
+                os.makedirs(self.abs_path('bin/bee2/'), exist_ok=True)
+                with open(self.abs_path('bin/bee2/vbsp_config.cfg'), 'w', encoding='utf8') as vbsp_file:
+                    for line in vbsp_config.export():
+                        vbsp_file.write(line)
+            
             export_screen.step('EXP', 'vbsp_config')
 
             if num_compiler_files > 0:
@@ -858,7 +867,11 @@ class Game:
                     if comp_file.is_dir():
                         continue
 
-                    dest = self.abs_path('bin' / comp_file.relative_to(compiler_src))
+                    from sys import platform
+                    if platform == "linux":
+                        dest = self.abs_path('bin/linux32/' / comp_file.relative_to(compiler_src))
+                    else:
+                        dest = self.abs_path('bin/' / comp_file.relative_to(compiler_src))
 
                     LOGGER.info('\t* {} -> {}', comp_file, dest)
 
@@ -1006,6 +1019,26 @@ class Game:
     def launch(self):
         """Try and launch the game."""
         webbrowser.open('steam://rungameid/' + str(self.steamID))
+
+
+    def config_symlink(self):
+        """On Linux, we need to symlink the bee2 folder into the linux32 folder
+
+        Sooo this exists.
+        """
+        root = self.abs_path('bin/')
+        
+        inst = os.path.join(root, 'bee2')
+        link_loc = os.path.join(root, 'linux32', 'bee2')
+
+        if os.path.islink(link_loc) and os.path.samefile(inst, link_loc):
+            LOGGER.info('Symlink already exists..')
+            return  # Already done
+
+        LOGGER.info('Creating symlink for config from "{}" -> "{}"', link_loc, inst)
+        os.symlink(inst, link_loc, target_is_directory=True)
+
+
 
     def copy_mod_music(self) -> set[str]:
         """Copy music files from Tag and PS:Mel.

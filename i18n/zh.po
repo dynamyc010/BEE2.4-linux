@@ -3,16 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: https://github.com/BEEmod/BEE2.4/issues\n"
-"POT-Creation-Date: 2021-11-14 15:29+1000\n"
+"POT-Creation-Date: 2022-05-22 11:29+0200\n"
 "PO-Revision-Date: 2019-11-22 10:47+1000\n"
 "Last-Translator: Antecer <antecer@outlook.com>\n"
 "Language: zh\n"
 "Language-Team: zh <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.10.1\n"
 
 #: loadScreen.py:224
 msgid "Skipped!"
@@ -718,7 +718,7 @@ msgstr "管理资源包..."
 msgid "Options"
 msgstr "设置"
 
-#: app/UI.py:1502 app/gameMan.py:1130
+#: app/UI.py:1502 app/gameMan.py:1163
 msgid "Quit"
 msgstr "退出"
 
@@ -1025,7 +1025,7 @@ msgstr "更改默认值..."
 msgid "Change the default settings for this item when placed."
 msgstr "修改该物品在放置时的默认设置。"
 
-#: app/gameMan.py:788 app/gameMan.py:880
+#: app/gameMan.py:788 app/gameMan.py:893
 msgid "BEE2 - Export Failed!"
 msgstr "BEE2 - 导出失败！"
 
@@ -1035,12 +1035,12 @@ msgid ""
 "verify your game cache. You can then export again."
 msgstr "编译器文件 {file} 丢失。退出Steam程序，然后点击OK以校验你的游戏缓存。然后再次尝试导出。"
 
-#: app/gameMan.py:881
+#: app/gameMan.py:894
 #, fuzzy
 msgid "Copying compiler file {file} failed. Ensure {game} is not running."
 msgstr "复制编译器文件 {file} 失败。确保 {game} 未运行"
 
-#: app/gameMan.py:1187
+#: app/gameMan.py:1220
 msgid ""
 "Ap-Tag Coop gun instance not found!\n"
 "Coop guns will not work - verify cache to fix."
@@ -1048,48 +1048,48 @@ msgstr ""
 "找不到光圈科技附加传送枪的实例！\n"
 "传送器将不起作用 - 校验缓存以修复此问题。"
 
-#: app/gameMan.py:1191
+#: app/gameMan.py:1224
 msgid "BEE2 - Aperture Tag Files Missing"
 msgstr "BEE2 - 光圈科技附加文件丢失"
 
-#: app/gameMan.py:1304
+#: app/gameMan.py:1337
 msgid "Select the folder where the game executable is located ({appname})..."
 msgstr "选择游戏可执行文件的路径 {appname}"
 
-#: app/gameMan.py:1308 app/gameMan.py:1323 app/gameMan.py:1333
-#: app/gameMan.py:1340 app/gameMan.py:1349 app/gameMan.py:1358
+#: app/gameMan.py:1341 app/gameMan.py:1356 app/gameMan.py:1366
+#: app/gameMan.py:1373 app/gameMan.py:1382 app/gameMan.py:1391
 msgid "BEE2 - Add Game"
 msgstr "BEE2 - 添加游戏"
 
-#: app/gameMan.py:1311
+#: app/gameMan.py:1344
 msgid "Find Game Exe"
 msgstr "查找游戏的exe文件"
 
-#: app/gameMan.py:1312
+#: app/gameMan.py:1345
 msgid "Executable"
 msgstr "可执行文件"
 
-#: app/gameMan.py:1320
+#: app/gameMan.py:1353
 msgid "This does not appear to be a valid game folder!"
 msgstr "这似乎不是一个有效的游戏文件夹！"
 
-#: app/gameMan.py:1330
+#: app/gameMan.py:1363
 msgid "Portal Stories: Mel doesn't have an editor!"
 msgstr "没有《传送门：梅尔的故事》的编辑器！"
 
-#: app/gameMan.py:1341
+#: app/gameMan.py:1374
 msgid "Enter the name of this game:"
 msgstr "输入此游戏的名称："
 
-#: app/gameMan.py:1348
+#: app/gameMan.py:1381
 msgid "This name is already taken!"
 msgstr "该名称已经存在！"
 
-#: app/gameMan.py:1357
+#: app/gameMan.py:1390
 msgid "Please enter a name for this game!"
 msgstr "请为此游戏创建一个名称！"
 
-#: app/gameMan.py:1375
+#: app/gameMan.py:1408
 msgid ""
 "\n"
 " (BEE2 will quit, this is the last game set!)"
@@ -1097,7 +1097,7 @@ msgstr ""
 "\n"
 "（BEE2即将退出，这是最后一次修改游戏的配置！）"
 
-#: app/gameMan.py:1381 app/paletteUI.py:272
+#: app/gameMan.py:1414 app/paletteUI.py:272
 msgid "Are you sure you want to delete \"{}\"?"
 msgstr "你确定要删除 \"{}\" 吗？"
 

@@ -15,7 +15,7 @@ if sys.stdin is None:
 freeze_support()
 
 if __name__ == '__main__':
-    if sys.platform == "darwin":
+    if sys.platform == "darwin" or sys.platform == "linux":
         # Disable here, can't get this to work.
         sys.modules['pyglet'] = None  # type: ignore
 

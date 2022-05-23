@@ -3,16 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  BEEMOD2\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-11-14 15:29+1000\n"
+"POT-Creation-Date: 2022-05-22 11:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.10.1\n"
 
 #: loadScreen.py:224
 msgid "Skipped!"
@@ -103,8 +103,8 @@ msgid ""
 "shapes."
 msgstr ""
 "Les brushes forment les murs ou les autres parties de la salle de test. "
-"Si cette valeur est élevée, essayer de réduire la taille de la carte ou de "
-"simplifier sa forme."
+"Si cette valeur est élevée, essayer de réduire la taille de la carte ou "
+"de simplifier sa forme."
 
 #. i18n: Progress bar description
 #: app/CompilerPane.py:132
@@ -146,8 +146,8 @@ msgid ""
 "Randomly choose a corridor. This is saved in the puzzle data and will not"
 " change."
 msgstr ""
-"Choisit un corridor aléatoire. Ceci est sauvegardé dans le data dde la salle "
-"et ne va pas changer."
+"Choisit un corridor aléatoire. Ceci est sauvegardé dans le data dde la "
+"salle et ne va pas changer."
 
 #: app/CompilerPane.py:322 app/UI.py:662
 msgid "Random"
@@ -224,8 +224,9 @@ msgid ""
 "Automatically delete unused Automatic screenshots. Disable if you want to"
 " keep things in \"portal2/screenshots\". "
 msgstr ""
-"Supprimer automatiquement les screenshots automatiques non utilisés. Décochez si"
-" vous souhaitez garder des images dans \"portal2/screenshots\"."
+"Supprimer automatiquement les screenshots automatiques non utilisés. "
+"Décochez si vous souhaitez garder des images dans "
+"\"portal2/screenshots\"."
 
 #: app/CompilerPane.py:615
 msgid "Lighting:"
@@ -244,8 +245,9 @@ msgid ""
 "You can hold down Shift during the start of the Lighting stage to invert "
 "this configuration on the fly."
 msgstr ""
-"Vous pouvez maintenir Shift appuyé pendant le démarrage du calcul de la lumière"
-" pour inverser cette configuration."
+"Vous pouvez maintenir Shift appuyé pendant le démarrage du calcul de la "
+"lumière pour inverser cette configuration."
+
 #: app/CompilerPane.py:639
 msgid ""
 "Compile with lower-quality, fast lighting. This speeds up compile times, "
@@ -340,8 +342,9 @@ msgid ""
 "You can hold down Shift during the start of the Geometry stage to quickly"
 " swap whichlocation you spawn at on the fly."
 msgstr ""
-"Vous pouvez maintenir Shift appuyé pendant le démarrage du calcul géométrique pour "
-"changer le point d'apparition."
+"Vous pouvez maintenir Shift appuyé pendant le démarrage du calcul "
+"géométrique pour changer le point d'apparition."
+
 #: app/CompilerPane.py:811
 #, fuzzy
 msgid ""
@@ -350,8 +353,8 @@ msgid ""
 msgstr ""
 "Lors d'une prévisualisation en solo, cela fait apparaître dans "
 "l'ascenseur. Cela empêche aussi le redémarrage de la carte quand vous "
-"atteignez la sortie. Utilisez ceci pour vérifier les corridors d'entrée et"
-" de sortie."
+"atteignez la sortie. Utilisez ceci pour vérifier les corridors d'entrée "
+"et de sortie."
 
 #: app/CompilerPane.py:815
 #, fuzzy
@@ -758,7 +761,7 @@ msgstr "Gérer les packages..."
 msgid "Options"
 msgstr "Options"
 
-#: app/UI.py:1502 app/gameMan.py:1130
+#: app/UI.py:1502 app/gameMan.py:1163
 msgid "Quit"
 msgstr "Quitter"
 
@@ -1087,7 +1090,7 @@ msgstr "Changer les valeurs par défaut..."
 msgid "Change the default settings for this item when placed."
 msgstr "Changer les réglages par défaut pour cet objet lorsqu'il est placé."
 
-#: app/gameMan.py:788 app/gameMan.py:880
+#: app/gameMan.py:788 app/gameMan.py:893
 msgid "BEE2 - Export Failed!"
 msgstr "BEE2 - Exportation échouée !"
 
@@ -1096,66 +1099,68 @@ msgid ""
 "Compiler file {file} missing. Exit Steam applications, then press OK to "
 "verify your game cache. You can then export again."
 msgstr ""
-"Le fichier du compileur {file} est manquant. Quittez les applications Steam, "
-"et appuyez sur OK pour vérifier le cache du jeu. vous pourrez ensuite réexporter."
+"Le fichier du compileur {file} est manquant. Quittez les applications "
+"Steam, et appuyez sur OK pour vérifier le cache du jeu. vous pourrez "
+"ensuite réexporter."
 
-#: app/gameMan.py:881
+#: app/gameMan.py:894
 #, fuzzy
 msgid "Copying compiler file {file} failed. Ensure {game} is not running."
 msgstr ""
 "Copie du fichier {file} échouée. Veuillez vous assurer que {game} n'est "
 "pas en cours d'exécution."
 
-#: app/gameMan.py:1187
+#: app/gameMan.py:1220
 msgid ""
 "Ap-Tag Coop gun instance not found!\n"
 "Coop guns will not work - verify cache to fix."
 msgstr ""
 "L'instance de générateur Coop pour Ap-Tag n'a pas été trouvée !\n"
-"Les générateurs Coop ne fonctionneront pas - vérifiez le cache pour réparer."
+"Les générateurs Coop ne fonctionneront pas - vérifiez le cache pour "
+"réparer."
 
-#: app/gameMan.py:1191
+#: app/gameMan.py:1224
 msgid "BEE2 - Aperture Tag Files Missing"
 msgstr "BEE2 - Fichiers de Aperture Tag manquants"
 
-#: app/gameMan.py:1304
+#: app/gameMan.py:1337
 msgid "Select the folder where the game executable is located ({appname})..."
 msgstr "Sélectionnez le dossier où l'exécutable du jeu est localisé ({appname})..."
 
-#: app/gameMan.py:1308 app/gameMan.py:1323 app/gameMan.py:1333
-#: app/gameMan.py:1340 app/gameMan.py:1349 app/gameMan.py:1358
+#: app/gameMan.py:1341 app/gameMan.py:1356 app/gameMan.py:1366
+#: app/gameMan.py:1373 app/gameMan.py:1382 app/gameMan.py:1391
 msgid "BEE2 - Add Game"
 msgstr "BEE2 - Ajouter un jeu"
 
-#: app/gameMan.py:1311
+#: app/gameMan.py:1344
 msgid "Find Game Exe"
 msgstr "Trouvez l'exécutable du jeu"
 
-#: app/gameMan.py:1312
+#: app/gameMan.py:1345
 msgid "Executable"
 msgstr "Exécutable"
 
-#: app/gameMan.py:1320
+#: app/gameMan.py:1353
 msgid "This does not appear to be a valid game folder!"
 msgstr "Cela ne semble pas être un dossier de jeu valide."
 
-#: app/gameMan.py:1330
+#: app/gameMan.py:1363
 msgid "Portal Stories: Mel doesn't have an editor!"
 msgstr "Portal Stories: Mel n'a pas d'éditeur."
 
-#: app/gameMan.py:1341
+#: app/gameMan.py:1374
 msgid "Enter the name of this game:"
 msgstr "Entrez le nom de ce jeu:"
 
-#: app/gameMan.py:1348
+#: app/gameMan.py:1381
 msgid "This name is already taken!"
 msgstr "Ce nom est déjà pris !"
 
-#: app/gameMan.py:1357
+#: app/gameMan.py:1390
 msgid "Please enter a name for this game!"
 msgstr "Veuillez entrer un nom pour ce jeu."
 
-#: app/gameMan.py:1375
+#: app/gameMan.py:1408
 msgid ""
 "\n"
 " (BEE2 will quit, this is the last game set!)"
@@ -1163,7 +1168,7 @@ msgstr ""
 "\n"
 "(BEE2 va se fermer.)"
 
-#: app/gameMan.py:1381 app/paletteUI.py:272
+#: app/gameMan.py:1414 app/paletteUI.py:272
 msgid "Are you sure you want to delete \"{}\"?"
 msgstr "Êtes-vous sûr de vouloir supprimer cette palette ?"
 
@@ -1341,9 +1346,7 @@ msgstr "Sélectionnez la musique du Gel Propulsif."
 msgid ""
 "Select music played when players have large amounts of horizontal "
 "velocity."
-msgstr ""
-"Sélectionne la musique quand les joueurs vont très vite "
-"horizontalement."
+msgstr "Sélectionne la musique quand les joueurs vont très vite horizontalement."
 
 #: app/music_conf.py:201
 msgid "Add no music while running fast."
@@ -1512,8 +1515,8 @@ msgid ""
 "Prevent sub-windows from moving outside the screen borders. If you have "
 "multiple monitors, disable this."
 msgstr ""
-"Empêcher les sous-fenêtres de sortir des limites de l'écran. Si vous "
-"avez plusieurs écrans, désactivez cela."
+"Empêcher les sous-fenêtres de sortir des limites de l'écran. Si vous avez"
+" plusieurs écrans, désactivez cela."
 
 #: app/optionWindow.py:384
 #, fuzzy
@@ -1526,9 +1529,9 @@ msgid ""
 "appear on the taskbar/dock, they can't be brought to the top easily "
 "again."
 msgstr ""
-"Forcer les écrans de téléchargement à être au-dessus des autres "
-"fenêtres. Si elles n'apparaissent pas dans la barre des tâches/dock, elles"
-" ne peuvent pas aller au-dessus facilement."
+"Forcer les écrans de téléchargement à être au-dessus des autres fenêtres."
+" Si elles n'apparaissent pas dans la barre des tâches/dock, elles ne "
+"peuvent pas aller au-dessus facilement."
 
 #: app/optionWindow.py:395
 msgid "Reset All Window Positions"
@@ -1596,8 +1599,8 @@ msgid ""
 "Enables displaying additional UI specific for development purposes. "
 "Requires restart to have an effect."
 msgstr ""
-"Active l'affichage d'autres éléments de l'interface pour le développement. "
-"Requiert un redémarrage pour fonctionner."
+"Active l'affichage d'autres éléments de l'interface pour le "
+"développement. Requiert un redémarrage pour fonctionner."
 
 #: app/optionWindow.py:457
 msgid "Preserve Game Directories"
@@ -1653,7 +1656,9 @@ msgstr "Reloader les images"
 
 #: app/optionWindow.py:505
 msgid "Reload all images in the app. Expect the app to freeze momentarily."
-msgstr "Reloader toutes les images dans l'application. Attendez-vous à un lag de l'application."
+msgstr ""
+"Reloader toutes les images dans l'application. Attendez-vous à un lag de "
+"l'application."
 
 #: app/packageMan.py:64
 msgid "BEE2 - Restart Required!"
